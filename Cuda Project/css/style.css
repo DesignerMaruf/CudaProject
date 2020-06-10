@@ -1,0 +1,690 @@
+/*==============================================
+Template Name: CUDA
+-Cuda Single Page Portfolio Template
+Description: Cuda is a single page creative PSD template with modern flat design. This template is great for anyone looking for a clean portfolio showcase. The PSD file is well organized and it can be customized easily to suit your needs.
+Author: Maruf Ahmed
+Version: 1.0
+================================================*/
+
+/* ==============================================
+
+    CSS INDEX
+    =========
+    1. FONTS
+    2. REUSEABLE CODE
+    3. MENU SECTION
+    4. HERO SECTION
+    5.SERVICE SECTION
+    6. TEAM SECTION
+    7. SKILL SECTION
+    8. PORTFOLIO SECTION
+    9. ABOUT-US SECTION
+    10.CONTACT SECTION
+    11. FOOTER SECTION
+
+================================================*/
+
+
+/*============
+   1. FONTS
+===============*/
+@font-face {
+    font-family: chivo;
+    src: url(../font/chivo/Chivo-Light.ttf);
+}
+
+@font-face {
+    font-family: overpass;
+    src: url(../font/chivo/Chivo-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #f4f4f4;
+    font-family: chivo;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/*===============
+   2. REUSEABLE CODE
+====================*/
+.container {
+    max-width: 1580px;
+    margin: auto;
+}
+
+hr {
+    width: 7%;
+    margin: auto;
+    height: 5px;
+    background: #f7f7f7;
+    border: none;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #ffcc00;
+}
+
+/*==========
+   3.  MENU SECTION
+================*/
+.hero-bg {
+    background: url(../img/herobg.jpg) no-repeat center / cover;
+}
+
+.overly {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.9);
+    color: #f7f7f7;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+    margin: auto;
+    z-index: 11111111;
+}
+
+.logo {
+    font-size: 120%;
+    letter-spacing: 3px;
+    float: left;
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.menu-item {
+    float: right;
+}
+
+.menu ul {
+    position: relative;
+    top: 20px;
+    right: 100px;
+}
+
+.menu ul li {
+    display: inline;
+    list-style: none;
+    padding: 5px 25px;
+    text-transform: uppercase;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 100%;
+    color: darkturquoise;
+    font-family: chivo;
+}
+
+.menu ul li a:hover,
+.menu ul li .active {
+    border-bottom: 3px solid #ffcc00;
+
+}
+
+/*==========
+    4. HERO SECTION
+================*/
+/*SCROLL TO TOP*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+/*SCROLL TO TOP*/
+
+.hero-text {
+    text-align: center;
+    padding: 300px 0 50px;
+}
+
+.hero-text p {
+    font-family: overpass;
+    font-size: 250%;
+    line-height: 1.5;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+.btn {
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.btn button {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: overpass;
+    font-size: 80%;
+    background: transparent;
+    border: 2px solid #ffcc00;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn button:hover {
+    background: #ffcc00;
+    color: aliceblue;
+    -webkit-box-shadow: 2px 2px 5px 5px;
+    box-shadow: -1px 1px 3px 3px #00000669;
+    border: 2px solid transparent;
+    color: #181a1c;
+}
+
+/*==========
+    5.SERVICE SECTION
+================*/
+
+#services {
+    background: url(../img/services.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.service-text {
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    line-height: 1.5;
+
+}
+
+.service-text h2 {
+    font-size: 250%;
+    font-family: overpass;
+    padding: 10px 0;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+}
+
+
+.service-text p {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+    letter-spacing: 2px;
+
+}
+
+.work-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    padding-bottom: 150px;
+
+}
+
+.col-item-4 {
+    padding: 10px 0;
+    border-radius: 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin: 0 20px;
+    border: 1px solid transparent;
+}
+
+.col-item-4 h4 {
+    text-transform: uppercase;
+    padding: 50px 0 0;
+    font-size: 100%;
+    font-family: overpass;
+    letter-spacing: 2px;
+}
+
+.col-item-4 .service-item-text {
+    font-size: 90%;
+    font-family: chivo;
+    word-spacing: 2px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+#services .col-item-4:hover {
+    background: #ffcc00;
+    -webkit-box-shadow: 2px 2px 5px 5px;
+    box-shadow: -1px 1px 3px 3px #00000669;
+    color: #181a1c;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+#services .col-item-4:hover h4 {
+    border-bottom: 5px solid #181a1c;
+    border-bottom-style: double;
+    width: 65%;
+    margin: auto;
+
+}
+
+/*============
+   6. TEAM SECTION
+================*/
+#team {
+    background: url(../img/team-bg.jpg) no-repeat center / cover;
+    text-align: center;
+}
+
+.team-text {
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    line-height: 1.5;
+
+}
+
+.team-text h2 {
+    font-size: 250%;
+    font-family: overpass;
+    padding: 10px 0;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+}
+
+
+.team-text p {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+    letter-spacing: 2px;
+
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    padding-bottom: 150px;
+}
+
+.col-team-4 {
+    padding: 10px 0;
+    border-radius: 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin: 0 20px;
+    border: 1px solid transparent;
+}
+
+.col-team-4 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.col-team-4:hover img {
+    border-radius: 10px;
+    border: 1px solid #ffcc00;
+}
+
+.col-team-4 h4 {
+    text-transform: uppercase;
+    padding: 50px 0 0;
+    font-size: 100%;
+    font-family: overpass;
+    letter-spacing: 2px;
+}
+
+.col-team-4 .team-about-text {
+    font-size: 90%;
+    font-family: chivo;
+    word-spacing: 2px;
+    line-height: 1.5;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.social-icon ul li {
+    display: inline;
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.social-icon ul li a {
+    text-decoration: none;
+    font-size: 120%;
+    color: #ffcc00;
+}
+
+.social-icon ul li:hover i {
+    color: #f4f4f4;
+    cursor: default;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+}
+
+/*============
+   7. SKILL SECTION
+================*/
+#skill {
+    background: url(../img/skill-bg.jpg) no-repeat center / cover;
+}
+
+.skill-text {
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    line-height: 1.5;
+}
+
+.skill-text h2 {
+    font-size: 250%;
+    font-family: overpass;
+    padding: 10px 0;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+}
+
+.skill-text p {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
+.skill-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+.col-skill-4 {
+    margin: 10px;
+}
+
+.col-skill-4 p {
+    font-size: 150%;
+    font-family: overpass;
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: #ffcc00;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 5;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress text {
+    fill: #fff;
+    font: 400 1em/1 'Oswald', sans-serif;
+    text-anchor: middle;
+}
+
+/*===========
+   8. PORTFOLIO SECTION
+====================*/
+#portfolio {
+    background: url(../img/portfolio.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.portfolio-text {
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    line-height: 1.5;
+}
+
+.portfolio-text h2 {
+    font-size: 250%;
+    font-family: overpass;
+    padding: 10px 0;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+
+}
+
+.portfolio-text p {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
+.grid-work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
+    grid-auto-rows: minmax(300px, auto);
+    padding-bottom: 100px;
+}
+
+.grid-work-items:nth-child(1) {
+    background: url(../img/Portfolio-one.png) no-repeat center / 70% 100%;
+}
+
+.grid-work-items:nth-child(2) {
+    background: url(../img/Portfolio-two.png) no-repeat center / 70% 100%;
+}
+
+.grid-work-items:nth-child(3) {
+    background: url(../img/Portfolio-three.png) no-repeat center / 70% 100%;
+}
+
+.grid-work-items:nth-child(4) {
+    background: url(../img/Portfolio-four.png) no-repeat center / 70% 100%;
+}
+
+.portfolio-filter {
+    margin-bottom: 50px;
+}
+
+.portfolio-filter button {
+    border: 1px solid #333;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffcc00;
+    padding: 8px 35px;
+    border-radius: 10px;
+    font-size: 160%;
+    cursor: pointer;
+    margin: 0 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.portfolio-filter button:nth-child(1) {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0;
+}
+
+.portfolio-filter button:nth-child(4) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0;
+}
+
+.portfolio-filter button:hover {
+    background: #fff;
+    color: #181a1c;
+}
+
+/*====================
+    9. ABOUT-US SECTION
+=========================*/
+#about-us {
+    background: #d74680;
+    overflow: visible;
+}
+
+.about-text {
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    line-height: 1.5;
+}
+
+.about-text h2 {
+    font-size: 250%;
+    font-family: overpass;
+    padding: 10px 0;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
+.about-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: auto;
+}
+
+.col-about-4 {
+    margin: 20px 15px;
+}
+
+.col-about-4 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #ffcc00;
+}
+
+.clientPhoto {
+    float: left;
+
+}
+
+.clientReview {
+    float: left;
+    margin: 20px;
+    width: 60%;
+    text-align: left;
+}
+
+.clientReview p {
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-size: 90%;
+}
+
+.clientReview h4 {
+    margin-top: 10px;
+    line-height: 2.5;
+}
+
+/*============
+    10.CONTACT SECTION
+==================*/
+#contact {
+    background: url(../img/contactForm.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.contactForm {
+    width: 100%;
+    margin: auto;
+}
+
+#contact .btn {
+    margin: 50px 0 0 0;
+    padding-bottom: 50px;
+}
+
+input {
+    width: 350px;
+    padding: 10px 15px;
+    margin: 30px 10px;
+}
+
+#subject {
+    height: 170px;
+    width: 720px;
+    padding: 10px 10px;
+
+}
+
+input,
+#subject {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f4f4f4;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    font-size: 80%;
+    font-family: overpass;
+}
+
+/*=================
+   11. FOOTER SECTION
+=====================*/
+
+.socialLink ul {
+    padding: 30px 0;
+}
+
+.socialLink ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 10px 10px;
+}
+
+.socialLink ul li a {
+    text-decoration: none;
+    font-size: 100%;
+    color: #ffcc00;
+}
